@@ -1,0 +1,15 @@
+		HISTORY OF YOUR SHOPPING:
+
+Recorded Time Of Yur Shopping Is:
+Sat Jan 13 18:01:33 2024
+
+Products Details:
+
+Product PRINTER
+Price 40000
+Quantity 10
+Product MOUSE
+Price 2500
+Quantity 5
+Total Bill Is 42500 Rs
+
