@@ -1,4 +1,5 @@
 from shared import file_name                #import text file from shared file
+import os
 
 final=[]
 def first_name():  # amking function of last name first name address and email
@@ -86,11 +87,12 @@ def signup(final):
     while True:
         # taking input of username
         user_name = input("Enter User Name Don't Contain Spaces: ")
+        file_path = f"Database/UsersHistory/{user_name}.txt"
         # space not allowed
         if " " not in user_name and len(user_name) > 1:
             #checking that if username is already in list
             for check in final:
-                if user_name == check["username"]:
+                if user_name.lower() == check["username"].lower() or os.path.exists(file_path):
                     print('Username is already taken. Please select another username.')
                     while True:
                     #asking for another chance
